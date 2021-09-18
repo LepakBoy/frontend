@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -230,7 +231,6 @@ button:hover {
     height: 380px;
     margin: 0 auto;
     background-color: #428bd4b7;
-
     /* backdrop-filter: blur(1px); */
     /* filter: blur(20px); */
   }
