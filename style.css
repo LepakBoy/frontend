@@ -8,6 +8,8 @@ body {
   width: 100%;
   background: linear-gradient(to bottom right, rgba(59, 138, 235, 1), rgba(178, 255, 218, 1));
   position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 button:hover {
   cursor: pointer;
@@ -16,7 +18,6 @@ button:hover {
 .header {
   width: 100%;
   height: 13vh;
-
   display: flex;
 }
 .container-header {
@@ -103,6 +104,7 @@ button:hover {
 }
 .logo-company img {
   width: 60%;
+  filter: drop-shadow(1px 1px 6px black);
 }
 .login-form {
   width: 100%;
@@ -142,6 +144,7 @@ button:hover {
   margin-bottom: 30px;
   width: 100%;
   height: 36px;
+  font-size: 14px;
   border-radius: 12px;
   border: none;
   box-shadow: 0 2px 4px rgb(112, 112, 112);
@@ -186,4 +189,74 @@ button:hover {
 }
 .input-login-form .forgot-password a:hover {
   color: #0b427a;
+}
+/* ========================== RESPONSIIVE ========================== */
+@media (max-width: 992px) {
+  .login-side {
+    padding-left: unset;
+  }
+}
+@media (max-width: 915px) {
+  .link a {
+    margin-left: 12px;
+  }
+  .login-form .text-area,
+  .login-form .input input {
+    font-size: 0.9rem;
+  }
+  .login-side {
+    padding-left: 0px;
+  }
+}
+@media (max-width: 769px) {
+  .link {
+    display: none;
+  }
+  .image-side {
+    display: none;
+  }
+  #jumbo-bg {
+    width: 100%;
+  }
+  .login-side {
+    z-index: 9;
+    width: 100%;
+    padding: 0 22px;
+    display: flex;
+    align-items: center;
+  }
+  .login-form {
+    width: 80%;
+    height: 380px;
+    margin: 0 auto;
+    background-color: #428bd4b7;
+
+    /* backdrop-filter: blur(1px); */
+    /* filter: blur(20px); */
+  }
+}
+
+@media (max-width: 700px) {
+  .logo {
+    width: 100%;
+    font-size: 24px;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .login-form {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .logo,
+  .subtitle {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 440px) {
+  .logo,
+  .subtitle {
+    font-size: 1rem;
+  }
 }
