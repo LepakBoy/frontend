@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(59, 138, 235, 1), rgba(178, 255, 218, 1));
+  position: relative;
+}
+button:hover {
+  cursor: pointer;
+}
+/* ========================== HEADER ========================== */
+.header {
+  width: 100%;
+  height: 10vh;
+
+  display: flex;
+}
+.container-header {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: 900;
+  text-shadow: 0 0 3px rgb(88, 88, 88);
+}
+.link {
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link a {
+  margin-left: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+  text-shadow: 0 0 3px rgb(88, 88, 88);
+}
+/* ========================== JUMBOTRON ========================== */
+.jumbotron {
+  width: 100%;
+  height: 90vh;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px;
+  height: 100%;
+  display: flex;
+}
+.image-side {
+  width: 60%;
+  height: 100%;
+  /* background-image: url(img/pngegg.png); */
+}
+#jumbo-bg {
+  width: 58%;
+  height: 85%;
+  left: 0;
+  bottom: 0;
+  position: fixed;
+}
+.login-side {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.login-form {
+  width: 90%;
+  background-color: #428cd4;
+  border-radius: 20px;
+  box-shadow: 0 1px 6px rgb(112, 112, 112);
+}
+.login-form .title {
+  padding-top: 38px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-form .text-area {
+  width: 80%;
+  margin: 20px auto 40px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  text-align: center;
+}
+.login-form .title img {
+  margin-right: 8px;
+  width: 36px;
+}
+.input-login-form {
+  width: 84%;
+  margin: 0 auto;
+}
+.input-login-form .input input {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 36px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 2px 4px rgb(112, 112, 112);
+  text-align: center;
+}
+.login-form .button {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.input-login-form .button button {
+  width: 100%;
+  height: 34px;
+  margin-bottom: 10px;
+  border-radius: 12px;
+  border: none;
+  background-color: #ea4492;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgb(112, 112, 112);
+}
+.input-login-form .button button:hover {
+  background-color: #c70d64;
+  color: #b7b8b9;
+  border: 2px solid #ea4492;
+}
+
+.input-login-form .forgot-password {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.input-login-form .forgot-password a {
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 12px;
+  text-decoration: none;
+  list-style: none;
+}
+.input-login-form .forgot-password a:hover {
+  color: #0b427a;
+}
